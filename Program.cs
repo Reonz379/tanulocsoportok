@@ -1,54 +1,49 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
-namespace Kiadasok
+namespace Letra
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            List<Konyvek> konyvekLista = new List<Konyvek>();
-            File.ReadAllLines("kiadas.txt").ToList().ForEach(x =>
+            List<Rolls> throws = new List<Rolls>();
+            int asd = 0;
+            string asdf = "";
+            foreach (var item in File.ReadAllText("dobasok.txt").Split(", "))
             {
-                var darabok = x.Split(';');
-                konyvekLista.Add(new Konyvek(int.Parse(darabok[0]), int.Parse(darabok[1]), darabok[2] == "ma", darabok[3], int.Parse(darabok[4])));
-            });
-            Console.WriteLine("2. feladat:");
-            Console.Write("Szerző: ");
-            string szerzo = Console.ReadLine();
-            Console.Write(konyvekLista.FindAll(x => x.Szerzo_Cim.Contains(szerzo)).ToList().Count == 0 ? "Nem adtak ki\n" : konyvekLista.FindAll(x => x.Szerzo_Cim.Contains(szerzo)).ToList().Count + " könykiadás\n");
-            Console.WriteLine("3. feladat:");
-            Console.WriteLine($"Legnagyobb példányszám: {konyvekLista.Max(x => x.Peldany)}, előfordult {konyvekLista.FindAll(x => x.Peldany == konyvekLista.Max(y => y.Peldany)).Count} alkalommal");
-            Console.WriteLine("4. feladat:");
-            var kulfoldi = konyvekLista.FindAll(x => x.Hazai == false).Where(x => x.Peldany >= 40000).ToList()[0];
-            Console.WriteLine($"{kulfoldi.Ev}/{kulfoldi.NegyedEv}. {kulfoldi.Szerzo_Cim}");
-            Console.WriteLine("5. feladat:");
-            Console.WriteLine($"Év\tMagyar kiadás\tMagyar Példányszám\tKülföldi kiadás\tKülföldi példányszám");
-            using (StreamWriter writer = new StreamWriter("tabla.html"))
-            {
-                writer.WriteLine("<table>");
-                writer.WriteLine("<tr><th>Év</th><th>Magyar kiadás</th><th>Magyar példányszám</th><th>Külföldi kiadás</th><th>Külföldi példányszám</th></tr>");
-                foreach (var item in konyvekLista.Select(y => y.Ev).Distinct())
-                {
-                    Console.WriteLine($"{item}\t\t{konyvekLista.Where(z => z.Ev == item).ToList().FindAll(z => z.Hazai == true).Count()}\t\t{konyvekLista.Where(z => z.Ev == item).ToList().FindAll(z => z.Hazai == true).Select(z => z.Peldany).ToList().Sum()}\t\t\t{konyvekLista.Where(z => z.Ev == item).ToList().FindAll(z => z.Hazai == false).Count}\t\t{konyvekLista.Where(z => z.Ev == item).ToList().FindAll(z => z.Hazai == false).Select(z => z.Peldany).ToList().Sum()}");
-                    writer.WriteLine($"<tr><td>{item}</td><td>{konyvekLista.Where(z => z.Ev == item).ToList().FindAll(z => z.Hazai == true).Count()}</td><td>{konyvekLista.Where(z => z.Ev == item).ToList().FindAll(z => z.Hazai == true).Select(z => z.Peldany).ToList().Sum()}</td><td>{konyvekLista.Where(z => z.Ev == item).ToList().FindAll(z => z.Hazai == false).Count}</td><td>{konyvekLista.Where(z => z.Ev == item).ToList().FindAll(z => z.Hazai == false).Select(z => z.Peldany).ToList().Sum()}</td></tr>");
-                }
-                writer.WriteLine("</table>");
+                asd += 1;
+                asdf = asd + " + " + item;
+                throws.Add(new Rolls(asdf));
             }
-            Console.WriteLine("6. feladat:");
-            Console.WriteLine("Legalább kétszer, nagyobb példányszámban újra kiadott könyvek:");
-            var ismetlodokonyvek = konyvekLista.GroupBy(x => x.Szerzo_Cim).Where(x => x.Count() > 2).ToList();
-            foreach (var item in ismetlodokonyvek)
+
+            Console.WriteLine("2. feladat");
+            //foreach (var item in throws)
+            //{
+            //    Console.Write(item.Rollval + ", ");
+            //}
+            int curTile = 0;
+            int ladder = 0;
+            foreach (var item in throws)
             {
-                if (!item.OrderByDescending(x => x.Ev_Negyedev).ToList().All(x => x.Peldany <= item.OrderByDescending(y => y.Ev_Negyedev).ToList()[item.OrderByDescending(y => y.Peldany).ToList().Count() - 1].Peldany))
+                curTile += item.Rollval;
+                if (curTile % 10 == 0)
                 {
-                    if (konyvekLista.FindAll(x => x.Szerzo_Cim == item.Key).Skip(1).ToList().All(x => x.Peldany >= konyvekLista.FindAll(y => y.Szerzo_Cim == item.Key).First().Peldany))
-                    {
-                        Console.WriteLine(item.Key);
-                    }
+                    ladder++;
+                    curTile -= 3;
                 }
+                Console.Write(curTile + " ");
+            }
+            Console.WriteLine($"\n3. feladat\nA játék során {ladder} alkalommal lépett létrára.");
+            Console.WriteLine($"4. feladat");
+            if (curTile >= 45)
+            {
+                Console.WriteLine("A játékot befejezte.");
+            }
+            else
+            {
+                Console.WriteLine("A játékot abbahagyta.");
             }
             Console.ReadKey();
         }
