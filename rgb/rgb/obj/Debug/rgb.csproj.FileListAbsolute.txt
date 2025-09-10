@@ -1,0 +1,8 @@
+Z:\12 osztály\c#\rgb\rgb\bin\Debug\rgb.exe.config
+Z:\12 osztály\c#\rgb\rgb\bin\Debug\rgb.exe
+Z:\12 osztály\c#\rgb\rgb\bin\Debug\rgb.pdb
+Z:\12 osztály\c#\rgb\rgb\obj\Debug\rgb.csproj.AssemblyReference.cache
+Z:\12 osztály\c#\rgb\rgb\obj\Debug\rgb.csproj.CoreCompileInputs.cache
+Z:\12 osztály\c#\rgb\rgb\obj\Debug\rgb.exe
+Z:\12 osztály\c#\rgb\rgb\obj\Debug\rgb.pdb
+Z:\12 osztály\c#\rgb\rgb\obj\Debug\rgb.exe.config
