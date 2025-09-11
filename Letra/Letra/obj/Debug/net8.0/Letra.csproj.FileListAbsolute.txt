@@ -1,0 +1,14 @@
+C:\ЦСС\12\Letra\Letra\obj\Debug\net8.0\Letra.GeneratedMSBuildEditorConfig.editorconfig
+C:\ЦСС\12\Letra\Letra\obj\Debug\net8.0\Letra.AssemblyInfoInputs.cache
+C:\ЦСС\12\Letra\Letra\obj\Debug\net8.0\Letra.AssemblyInfo.cs
+C:\ЦСС\12\Letra\Letra\obj\Debug\net8.0\Letra.csproj.CoreCompileInputs.cache
+C:\ЦСС\12\Letra\Letra\bin\Debug\net8.0\Letra.exe
+C:\ЦСС\12\Letra\Letra\bin\Debug\net8.0\Letra.deps.json
+C:\ЦСС\12\Letra\Letra\bin\Debug\net8.0\Letra.runtimeconfig.json
+C:\ЦСС\12\Letra\Letra\bin\Debug\net8.0\Letra.dll
+C:\ЦСС\12\Letra\Letra\bin\Debug\net8.0\Letra.pdb
+C:\ЦСС\12\Letra\Letra\obj\Debug\net8.0\Letra.dll
+C:\ЦСС\12\Letra\Letra\obj\Debug\net8.0\refint\Letra.dll
+C:\ЦСС\12\Letra\Letra\obj\Debug\net8.0\Letra.pdb
+C:\ЦСС\12\Letra\Letra\obj\Debug\net8.0\Letra.genruntimeconfig.cache
+C:\ЦСС\12\Letra\Letra\obj\Debug\net8.0\ref\Letra.dll

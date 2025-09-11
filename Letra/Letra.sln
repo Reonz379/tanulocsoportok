@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letra", "Letra\Letra.csproj", "{3B55618C-6B58-44C8-8C93-E2AD24B056A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B55618C-6B58-44C8-8C93-E2AD24B056A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B55618C-6B58-44C8-8C93-E2AD24B056A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B55618C-6B58-44C8-8C93-E2AD24B056A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B55618C-6B58-44C8-8C93-E2AD24B056A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B75D06AC-9606-4DEA-A5D4-97D62C28504C}
+	EndGlobalSection
+EndGlobal
