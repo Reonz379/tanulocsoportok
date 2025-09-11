@@ -1,0 +1,8 @@
+Z:\Programozás\12.osztály\asztalgyak\Kiadasok\Kiadasok\bin\Debug\Kiadasok.exe.config
+Z:\Programozás\12.osztály\asztalgyak\Kiadasok\Kiadasok\bin\Debug\Kiadasok.exe
+Z:\Programozás\12.osztály\asztalgyak\Kiadasok\Kiadasok\bin\Debug\Kiadasok.pdb
+Z:\Programozás\12.osztály\asztalgyak\Kiadasok\Kiadasok\obj\Debug\Kiadasok.csproj.AssemblyReference.cache
+Z:\Programozás\12.osztály\asztalgyak\Kiadasok\Kiadasok\obj\Debug\Kiadasok.csproj.CoreCompileInputs.cache
+Z:\Programozás\12.osztály\asztalgyak\Kiadasok\Kiadasok\obj\Debug\Kiadasok.exe
+Z:\Programozás\12.osztály\asztalgyak\Kiadasok\Kiadasok\obj\Debug\Kiadasok.pdb
+Z:\Programozás\12.osztály\asztalgyak\Kiadasok\Kiadasok\obj\Debug\Kiadasok.exe.config
